@@ -2,6 +2,7 @@ package cn.dancingsnow.create_biology;
 
 import cn.dancingsnow.create_biology.data.CreateBiologyDataGen;
 import cn.dancingsnow.create_biology.init.ModBlocks;
+import cn.dancingsnow.create_biology.init.ModCreativeModeTabs;
 import cn.dancingsnow.create_biology.init.ModItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.resources.ResourceLocation;
@@ -28,8 +29,9 @@ public class CreateBiologyMod {
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        ModBlocks.register();
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register();
+        ModBlocks.register();
 
         REGISTRATE.registerEventListeners(modEventBus);
         CreateBiologyDataGen.init();

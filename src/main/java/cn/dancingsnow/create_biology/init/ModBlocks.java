@@ -11,6 +11,9 @@ import net.neoforged.neoforge.common.Tags;
 import static cn.dancingsnow.create_biology.CreateBiologyMod.REGISTRATE;
 
 public class ModBlocks {
+    static {
+        REGISTRATE.defaultCreativeTab(ModCreativeModeTabs.BIOLOGY.getKey());
+    }
     public static final BlockEntry<CasingBlock> STAINLESS_STEEL_CASING = REGISTRATE
         .block("stainless_steel_casing", CasingBlock::new)
         .transform(BuilderTransformers.casing(() -> ModSpriteShifts.STAINLESS_STEEL_CASING))
