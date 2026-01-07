@@ -1,5 +1,6 @@
 package cn.dancingsnow.create_biology;
 
+import cn.dancingsnow.create_biology.data.CreateBiologyDataGen;
 import cn.dancingsnow.create_biology.init.ModBlocks;
 import cn.dancingsnow.create_biology.init.ModItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
@@ -31,6 +32,7 @@ public class CreateBiologyMod {
         ModItems.register();
 
         REGISTRATE.registerEventListeners(modEventBus);
+        CreateBiologyDataGen.init();
     }
 
     public static ResourceLocation of(String path) {
