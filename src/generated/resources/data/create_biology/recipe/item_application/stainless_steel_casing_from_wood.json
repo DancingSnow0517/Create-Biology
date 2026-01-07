@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "c:stripped_woods"
+    },
+    {
+      "tag": "c:ingots/stainless_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_biology:stainless_steel_casing"
+    }
+  ]
+}

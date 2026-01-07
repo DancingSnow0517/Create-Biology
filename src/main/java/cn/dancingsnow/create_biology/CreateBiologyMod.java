@@ -1,6 +1,9 @@
 package cn.dancingsnow.create_biology;
 
+import cn.dancingsnow.create_biology.init.ModBlocks;
+import cn.dancingsnow.create_biology.init.ModItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.config.ModConfig;
 import org.slf4j.Logger;
 
@@ -24,7 +27,14 @@ public class CreateBiologyMod {
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
+        ModBlocks.register();
+        ModItems.register();
+
         REGISTRATE.registerEventListeners(modEventBus);
+    }
+
+    public static ResourceLocation of(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
 
 }
