@@ -9,10 +9,22 @@ public class ModItems {
     static {
         REGISTRATE.defaultCreativeTab(ModCreativeModeTabs.BIOLOGY.getKey());
     }
+    //不锈钢
     public static final ItemEntry<Item> STAINLESS_STEEL_INGOT = REGISTRATE
         .item("stainless_steel_ingot", Item::new)
         .tag(ModTags.Items.STAINLESS_STEEL_INGOTS)
         .register();
+    //镍
+    public static final ItemEntry<Item> NICKEL_INGOT = REGISTRATE
+            .item("nickel_ingot", Item::new)
+            .tag(ModTags.Items.NICKEL_INGOT)
+            .register();
+
+    //铬
+    public static final ItemEntry<Item> CHROMIUM_INGOT = REGISTRATE
+            .item("chromium_ingot", Item::new)
+            .tag(ModTags.Items.CHROMIUM_INGOT)
+            .register();
 
     public static void register() {}
 }

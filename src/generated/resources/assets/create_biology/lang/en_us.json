@@ -2,6 +2,8 @@
   "block.create_biology.stainless_steel_casing": "Stainless Steel Casing",
   "create_biology.ponder.stainless_steel_casing.header": "Stainless Steel Casing",
   "create_biology.ponder.stainless_steel_casing.text_1": "Use a Stainless Steel Ingot on a stripped log or wood to create a Stainless Steel Casing.",
+  "item.create_biology.chromium_ingot": "Chromium Ingot",
+  "item.create_biology.nickel_ingot": "Nickel Ingot",
   "item.create_biology.stainless_steel_ingot": "Stainless Steel Ingot",
   "itemGroup.create_biology.biology": "Biology"
 }

@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Items {
         public static final TagKey<Item> STAINLESS_STEEL_INGOTS = common("ingots/stainless_steel");
+        public static final TagKey<Item> NICKEL_INGOT = common("ingots/nickel");
+        public static final TagKey<Item> CHROMIUM_INGOT = common("ingots/chromium");
 
         private static TagKey<Item> common(String path) {
             return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", path));
@@ -19,6 +21,8 @@ public class ModTags {
             return TagKey.create(Registries.ITEM, CreateBiologyMod.of(path));
         }
     }
+
+
 
     public static class Blocks {
         public static final TagKey<Block> STAINLESS_STEEL_BLOCK = common("storage_blocks/stainless_steel");
